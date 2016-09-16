@@ -82,6 +82,7 @@ else if(userInput.toUpperCase() === "SCISSOR") {
 		winner = " User (That's you!)"
 	}
 }
+//You love looking through code... Now you know =D
 else if(userInput.toUpperCase() === "JASOR") {
 	winner = " User (Most likely Jasor if not you found my easter egg) "
 }
