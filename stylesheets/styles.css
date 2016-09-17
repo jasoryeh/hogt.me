@@ -195,6 +195,7 @@ header ul a strong {
 section {
   width:500px;
   float:right;
+  padding-top: 25px;
   padding-bottom:50px;
 }
 
