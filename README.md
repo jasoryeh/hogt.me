@@ -1,10 +1,12 @@
-# A WIPSite with integrated RPS Game
+# JasorYEH's Official Website
 
-Just a website I want to work at and improve open-source -ly.
+> Just a website I want to work at and improve open-source -ly.
 
-RPS JS Game from https://github.com/jasoryeh/Rock-Paper-Scissors-JavaScript/
+Welcome to my website's project page!
 
-Rock-Paper-Scissors-JavaScript
-RPS.js is a Rock Paper Scissors Game.
+You can click me to head to the [**website**]
+[**website**]: jasoryeh.github.io
+
+**Project started on September 16th, 2016.**
 
 Not much else to say... eh...
