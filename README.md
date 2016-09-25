@@ -10,3 +10,10 @@ Check the [**website**] out!
 **Project started on September 16th, 2016.**
 
 Not much else to say... eh...
+
+# Credits
+Original template by [Steve Smith]
+[Steve Smith]: https://github.com/orderedlist
+
+Others by [me] and **others** who contribute.
+[me]: https://github.com/jasoryeh
