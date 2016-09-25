@@ -4,8 +4,8 @@
 
 Welcome to my website's project page!
 
-You can click me to head to the [**website**]
-[**website**]: jasoryeh.github.io
+Check the [**website**] out!
+[**website**]: https://jasoryeh.github.io
 
 **Project started on September 16th, 2016.**
 
