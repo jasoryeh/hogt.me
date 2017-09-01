@@ -15,7 +15,7 @@ vars[key] = value;
 });
 return vars;
 }
-var id = getUrlVars()["id"];
+var id = getUrlVars()["app"];
 //alert(id);
     </script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900i&subset=latin-ext" rel="stylesheet">
@@ -34,7 +34,7 @@ var id = getUrlVars()["id"];
       </header>
       <section>
       <h1>Success!</h1>
-        <p>You have successfully authenticated the application <script>document.write("<strong>" + id + "</strong>");</script>, thanks!</p>
+        <p>You have successfully authenticated the application <script>document.write("<strong>" + app + "</strong>");</script>, thanks!</p>
         <hr />
         <p>Changes may take a few minutes to apply</p>
         <!--<h2>If the application you authorized was a Discord bot...</h2>
