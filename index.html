@@ -153,6 +153,7 @@
     setTimeout(() => {
         document.getElementsByTagName("body")[0].style.opacity = "1";
         anim_hider.innerHTML = informationone;
+        anim_hider.style.transition = "margin 3s, opacity 1s";
 
         window.addEventListener("mousemove", () => {
             if (anim_started_once) return;
