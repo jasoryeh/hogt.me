@@ -129,11 +129,14 @@
     var anim_started_once = false;
 
     function anim_toggle() {
-        anim_hider.innerHTML = anim_bool_one ? informationone : informationtwo;
-        anim_hider.style.opacity = "1";
-        anim_social.style.opacity = "1";
-        anim_social.style.marginTop = "20px";
-        anim_bool_one = !anim_bool_one;
+        anim_hider.style.opacity = "0";
+        setTimeout(() => {
+            anim_hider.innerHTML = anim_bool_one ? informationone : informationtwo;
+            anim_hider.style.opacity = "1";
+            anim_social.style.opacity = "1";
+            anim_social.style.marginTop = "20px";
+            anim_bool_one = !anim_bool_one;
+        }, 1000);
     }
 
     function anim_start() {
@@ -144,7 +147,7 @@
             setTimeout(() => {
                 anim_toggle();
                 anim_start();
-            }, 1000);
+            }, 2000);
         }, 10000);
     }
 
