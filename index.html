@@ -16,9 +16,10 @@
     <meta name="keywords"
           content="jason ho, jasonho, jason, ho, jason.ho, jasoryeh, jasoryeh.tk, jyeh, jyeh.tk, developer, software, programmer, coder, website, coding">
     <link rel="icon" type="image/png" src="/favicon.ico"/>
-    <script src="https://vectormc.net/assets/js/loading-bar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <script src="https://vectormc.net/assets/js/loading-bar.min.js"></script>
+    <script src="particles.js"></script>
+    
     <style>
         a {
             color: rgba(20, 100, 150, 1);
@@ -40,7 +41,7 @@
     </style>
 </head>
 
-<body style="font-family: 'Open Sans', sans-serif; /*padding: 15% 10% 15% 10%;*/ width: 80%; margin: auto; margin-top: 15%; transition: opacity 1.5s; opacity: 0;">
+<body id="particles-js" style="font-family: 'Open Sans', sans-serif; /*padding: 15% 10% 15% 10%;*/ width: 80%; margin: auto; margin-top: 15%; transition: opacity 1.5s; opacity: 0;">
 <h1 style="margin-bottom: 10px;">
     <i class="fa fa-angle-double-right" aria-hidden="true"
        style="font-weight: lighter; margin-bottom: 0; padding-bottom: 0;"></i> Jason Ho
@@ -164,6 +165,10 @@
             }, 15000);
         });
     }, 1000);
+    
+  particlesJS.load('particles-js', 'particles.json', function(){
+    console.log('Loaded particles configuration file.');
+  });
 </script>
 
 </html>
