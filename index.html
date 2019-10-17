@@ -42,7 +42,7 @@
     </style>
 </head>
 
-<body style="font-family: 'Open Sans', sans-serif; /*padding: 15% 10% 15% 10%;*/ width: 80%; margin: auto; margin-top: 15%; transition: opacity 1.5s; opacity: 0;">
+<body style="font-family: 'Open Sans', sans-serif; /*padding: 15% 10% 15% 10%;*/ width: 80%; margin: auto; margin-top: 15%; transition: opacity 1.5s; opacity: 1.0;">
 <h1 style="margin-bottom: 10px; max-width: 900px;">
     <i class="fa fa-angle-double-right" aria-hidden="true"
        style="font-weight: lighter; margin-bottom: 0; padding-bottom: 0;"></i> Jason Ho
@@ -157,7 +157,8 @@
             }, 2000);
         }, 10000);
     }
-
+    
+    document.getElementsByTagName("body")[0].style.opacity = "0";
     setTimeout(() => {
         document.getElementsByTagName("body")[0].style.opacity = "1";
         anim_hider.innerHTML = informationone;
