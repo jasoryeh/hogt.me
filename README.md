@@ -1,10 +1,8 @@
 # Website
 
-> Just a website I want to work at and improve open-source -ly.
+Hello. Welcome to the source code of my page! Preview it at the link below, or check out my portfolio here.
 
-Hello. Welcome to the top-secret website page.
-
-https://jasonho.tk
+https://hogt.me
 
 **Project started on September 16th, 2016.**
 
