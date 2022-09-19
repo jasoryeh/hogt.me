@@ -38,17 +38,10 @@
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
-            width: 80%;
-            margin: auto;
-            transition: opacity 1.5s;
-            opacity: 1.0;
-            margin-top: 35vh;
+            margin: 0;
+            padding: 0;
         }
-        @media screen and (max-width: 750px) {
-            body {
-                margin-top: 5vh;
-            }
-        }
+
         a {
             color: rgba(20, 100, 150, 1);
             text-decoration: none;
@@ -59,27 +52,97 @@
             font-size: 14px;
         }
 
-        .social-links>a {
+        #content {
+            width: 80%;
+            margin: auto;
+            padding-top: 30vh;
+        }
+        @media screen and (max-width: 750px) {
+            #content {
+                padding-top: 5vh;
+            }
+        }
+
+        #content > #name {
+            margin-bottom: 10px;
+            max-width: 900px;
+            transform: translateX(-1.5rem);
+        }
+
+        #content > #decor {
+            font-weight: lighter;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        #content > #summary {
+            line-height: normal;
+            font-size: 12px;
+            font-weight: light;
+            color: grey;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+        #content > #info {
+            min-height: 5em;
+            transition: opacity 1s, margin 1s;
+        }
+
+        #socials {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        #socials > .social-links {
+            width: 80%;
+            margin: auto;
+            transition: margin 3s, opacity 1s;
+        }
+
+        #socials > .social-links > a {
             padding-right: 10px;
         }
 
-        .social-links {
-            transition: margin 3s, opacity 1s;
+        #links {
+            display: block;
+            transform-origin: bottom right;
+            transform: rotate(90deg) translateY(100%);
+            width: 100vh;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        #links > a {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.5rem;
+        }
+
+        #links > a > span {
+            display: none;
+        }
+
+        #links > a:hover>span {
+            display: inline !important;
         }
     </style>
 </head>
 
 <body>
     <div id="content">
-        <h1 style="margin-bottom: 10px; max-width: 900px; transform: translateX(-1.5rem);">
-            <i class="fa fa-angle-double-right" aria-hidden="true"
-                style="font-weight: lighter; margin-bottom: 0; padding-bottom: 0;"></i>
+        <h1 id="name">
+            <i id="decor" class="fa fa-angle-double-right" aria-hidden="true"></i>
                 Jason Ho
         </h1>
-        <p style="line-height: normal; font-size: 12px; font-weight: light; color: grey; margin-top: 0; padding-top: 0;">
+        <p id="summary">
             Student, Developer, Human.
         </p>
-        <div class="info" style="min-height: 5em; transition: opacity 1s, margin 1s;">
+        <div id="info">
             <p>
                 Hello! I'm Jason, and I am currently studying Computer Science and Engineering at the University of California, Irvine.
             </p>
@@ -93,8 +156,13 @@
             </p>
         </div>
     </div>
+    <div id="links">
+        <a href="/bp.html">
+            <b>b</b><span>y</span><b>p</b><span>ass</span>
+        </a>
+    </div>
     <div id="socials">
-        <p class="social-links" style="position: absolute; bottom: 0;">
+        <p class="social-links">
             <a href="https://github.com/jasoryeh">
                 <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
