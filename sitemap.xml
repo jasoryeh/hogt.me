@@ -6,18 +6,8 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://jasonho.tk/</loc>
-  <lastmod>2019-02-14T00:00:00+00:00</lastmod>
-</url>
-
-<url>
-  <loc>https://jasonho.tk/Jason_Ho_Resume_February_2019.pdf</loc>
-  <lastmod>2019-02-14T00:00:00+00:00</lastmod>
-</url>
-
-<url>
-  <loc>https://jasonho.tk/bp</loc>
-  <lastmod>2020-02-7T00:00:00+00:00</lastmod>
+  <loc>https://hogt.me/</loc>
+  <lastmod>2022-12-26T00:00:00+00:00</lastmod>
 </url>
 
 </urlset>
