@@ -57,6 +57,7 @@ h1 {
     color: grey;
     margin-top: 0;
     padding-top: 0;
+    margin-bottom: 1rem;
 }
 
 #content > #info {
