@@ -1,13 +1,13 @@
-
+const VERBOSE = false;
 window.osIsDarkTheme = function() {
     let osTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    console.info("OS Theme: ", osTheme ? 'dark' : 'light')
+    VERBOSE && console.info("OS Theme: ", osTheme ? 'dark' : 'light')
     return osTheme;
 }
 
 window.detectTheme = function() {
     let theme = localStorage.theme === 'dark' || (!('theme' in localStorage) && osIsDarkTheme());
-    console.info("Detected Theme: ", theme ? 'dark' : 'light');
+    VERBOSE && console.info("Detected Theme: ", theme ? 'dark' : 'light');
     return theme;
 }
 
@@ -20,10 +20,10 @@ window.reloadTheme = function() {
 
 window.setTheme = function(theme) {
     if (theme == null) {
-        console.info("Clearing theme.", " previously ", localStorage.theme)
+        VERBOSE && console.info("Clearing theme.", " previously ", localStorage.theme)
         localStorage.removeItem('theme');
     } else {
-        console.info("Setting theme to: ", theme, " previously ", localStorage.theme);
+        VERBOSE && console.info("Setting theme to: ", theme, " previously ", localStorage.theme);
         localStorage.theme = theme;
     }
     window.reloadTheme();
@@ -42,7 +42,9 @@ async function boot() {
     //window.setTheme('dark');
     //window.setTheme('light');
     window.setTheme(undefined);
-    window.reloadTheme();
+    setInterval(() => {
+        window.reloadTheme();
+    }, 500);
     //window.setTheme(null);
     console.log("\t...done.");
 }
