@@ -1,6 +1,8 @@
 
 window.osIsDarkTheme = function() {
-    return  window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let osTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    console.info("OS Theme: ", osTheme ? 'dark' : 'light')
+    return osTheme;
 }
 
 window.detectTheme = function() {
@@ -18,8 +20,10 @@ window.reloadTheme = function() {
 
 window.setTheme = function(theme) {
     if (theme == null) {
+        console.info("Clearing theme.", " previously ", localStorage.theme)
         localStorage.removeItem('theme');
     } else {
+        console.info("Setting theme to: ", theme, " previously ", localStorage.theme);
         localStorage.theme = theme;
     }
     window.reloadTheme();
@@ -35,7 +39,9 @@ window.toggleTheme = function() {
 
 async function boot() {
     console.log("Boot...");
-    window.setTheme('dark');
+    //window.setTheme('dark');
+    //window.setTheme('light');
+    window.setTheme(undefined);
     window.reloadTheme();
     //window.setTheme(null);
     console.log("\t...done.");
