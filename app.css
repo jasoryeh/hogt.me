@@ -115,3 +115,12 @@ h1 {
 #links > a:hover>span {
     display: inline !important;
 }
+
+.badge {
+    display: inline-block;
+    padding: 0.125rem 0.3rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
