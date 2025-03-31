@@ -1,3 +1,8 @@
+html {
+    --color-neutral-950: oklch(0.145 0 0);
+    --text-3xl: 1.875rem;
+}
+
 html.dark {
     background-color: var(--color-neutral-950);
     color: white;
@@ -30,7 +35,7 @@ h1 {
 #content {
     width: 80%;
     margin: auto;
-    padding-top: 30vh;
+    padding-top: 25vh;
 }
 @media screen and (max-width: 750px) {
     #content {
