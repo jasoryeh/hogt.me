@@ -75,23 +75,20 @@ h1 {
 }
 
 #socials {
-    width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    right: 0;
+    margin: 5px;
 }
 
-#socials > .social-links {
-    width: 80%;
-    margin: auto;
-    transition: margin 3s, opacity 1s;
+#socials > a > img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-top: 0.5rem;
 }
 
-#socials > .social-links > a {
-    padding-right: 10px;
-    display: inline-block;
-}
-
-.dark #socials > .social-links > a {
+.dark #socials > a > img {
     filter: invert();
 }
 
@@ -102,7 +99,7 @@ h1 {
     width: 100vh;
     bottom: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
 }
 
 #links > a {
